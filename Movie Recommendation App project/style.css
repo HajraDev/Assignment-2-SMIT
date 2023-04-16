@@ -1,0 +1,23 @@
+.input {
+  display: inline-block;
+  width: 30%;
+  align-items: center;
+  margin: 0px auto;
+}
+#genre,
+#language,
+#year {
+  width: 80%;
+}
+#rating {
+  width: 70%;
+  margin-right: 20px;
+}
+h1 {
+  text-align: center;
+}
+#search {
+}
+.title {
+  width: 80%;
+}

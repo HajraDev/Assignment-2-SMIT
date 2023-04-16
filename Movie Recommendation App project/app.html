@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movi Recommendation App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <h1>Movie Recommendation App</h1>
+
+    <form>
+      <div class="input">
+        <label for="genre">Genre</label><br />
+        <select id="genre" name="genre">
+          <option value="all">All</option>
+          <option value="all">Action</option>
+          <option value="all">Animation</option>
+          <option value="all">Science Fiction</option>
+          <option value="all">Family</option>
+          <option value="all">Comedy</option>
+        </select>
+      </div>
+      <div class="input">
+        <label for="year">Year</label><br />
+        <select id="year" name="year">
+          <option value="all">All</option>
+          <option value="all">2019</option>
+          <option value="all">2020</option>
+          <option value="all">2021</option>
+          <option value="all">2022</option>
+          <option value="all">2023</option>
+        </select>
+      </div>
+      <div class="input">
+        <label for="language">Language</label><br />
+        <select id="language" name="language">
+          <option value="all">All</option>
+          <option value="all">English</option>
+          <option value="all">Chines</option>
+          <option value="all">urdu</option>
+          <option value="all">punjabi</option>
+          <option value="all">saraiki</option>
+        </select>
+      </div>
+      <br /><br />
+      <label for="rating">Rating</label><br />
+      <select id="rating" name="rating">
+        <option value="all">All</option>
+        <option value="all">5</option>
+        <option value="all">4</option>
+        <option value="all">3</option>
+        <option value="all">2</option>
+        <option value="all">1</option>
+      </select>
+      <input
+        type="search"
+        id="searchInput"
+        name="search"
+        placeholder="search Movie"
+      />
+    </form>
+    <div class="m-auto my-5 jusytify-center w-[07%]">
+      <table
+        class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+      >
+      <thead class="text-xs text-gray-700 uppercase bg-gray-500 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+          <th scope="col"  class="w-[10%] px-6 py-3">RANK</th>
+          <th scope="col"  class="w-[70%] px-6 py-3">MOVIE</th>
+          <th scope="col"  class="w-[20%] px-6 py-3">YEAR</th>
+        </tr>
+      </thead>
+    </table>
+    </div>
+      <tbody id="table">
+        <tr id="tableElem" class="bg-white text-xl border-b dark:bg-gray-200 text-gray-900 dark:border-gray-700"></tr>
+      </tbody>
+    </table>
+    <p id="para" class="text-center text-black font bold py-2 px-4 m-auto my-4 rounded flex flex-nowrap"></p>
+  </body>
+</html>
